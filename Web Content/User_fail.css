@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+.alert2{
+	position: absolute;
+	width: 45%;
+	background: rgba(12,12,12,.98);
+	text-align: right;
+	bakcground: #000;
+	font-color: black;
+	right: 30%;
+}
+.closebtn{
+	background:rgb(30,30,30);
+	margin-left: 100px;
+}
+
+#txt{
+	text-align: left;
+	margin-left: 120px;
+}
+
+#msg{
+	text-align:left;
+	font-size: 40px;
+	
+}

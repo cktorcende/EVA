@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="login.css">
+	<title>EVA:Login</title>
+</head>
+<body>
+	<div id="pic"><img src="IMG/eva.png"></div>
+	<form id="form" action="log.jsp" method="POST">
+		<h2>Login</h2>
+		<label>Username</label><br/>
+		<input type="text" name="username" placeholder="year-branch-refno" size=30/><br/>
+		<label>Password</label><br/>
+		<input type="password" name="pswrd"size=20 id="pwd"/>
+		<input type="checkbox" onclick="myFunction()">Show<br/>
+		<input type="hidden" name="NoOfAttempts"/>
+		<input type="hidden" name="User_ID"/>
+		<input id="but" type="submit"/> 
+		<input id="but" type="reset"/>
+		<p>  </p>
+	</form>
+	
+</body>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("pwd");
+	  if (x.type === "password") {
+	    x.type = "text";
+	  } else {
+	    x.type = "password";
+	  }
+	}
+</script>
+</html>
