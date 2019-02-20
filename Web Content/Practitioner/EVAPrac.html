@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head><meta charset= "utf-8">
+	<title>EVA</title>
+	<link rel='stylesheet' href='EVA CSS.css'>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src= "JS EVA.js"></script>
+</head>
+<body>
+	
+	<div id="this">
+		<section id="inner"><button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+						<button id="in"><p>YOU HAVE</p><br/><h1>10</h1><br/><p>pending employees</p></button>
+					</section></div>
+	
+	<header>
+		<nav>	
+			<div class="logo">EVA</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">OPTIONS</a></li>
+						<li><a href="User/User.html">USER MANAGEMENT</a></li>
+						<li><a href="Admission/Admission.html">ADMISSION</a></li>
+						<li><a href="Billing/Billing.html">BILLING</a></li>
+						<li><a href="Inventory/Inventory.html">INVENTORY</a></li>
+						<li><a href="Record/Records.html">RECORDS</a></li>
+					</ul>					                                                  
+				</div>				
+			</nav>
+	</header>
+	
+	<div id="container"></div>
+	<main>
+		<a href="#" title="Post 1">
+			<article>
+				<div id="resTable">
+					<%@page import="conn.DbCon,dao.EmployeeRecordDAO,dbtb.dbtbcaregiver_record, java.util.*"%>
+					<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+					
+					<% 
+						List<dbtbcaregiver_record> l= EmployeeRecordDAO.getAllRecordsC();
+						request.setAttribute("l", l);
+					%>
+					
+						<table cellpadding=5>
+							<tr>
+								<th></th>
+								<th>Last Name</th>
+								<th>First Name</th>
+								<th>Middle Name</th>
+								<th>Date of Birth</th>
+								<th>Age</th>
+								<th>Address</th>
+								<th>City</th>
+								<th>Pin Code</th>
+								<th>State</th>
+								<th>Country</th>
+								<th>Phone</th>
+								<th>Mobile</th>
+								<th>Email</th>
+								<th>Designation</th>
+								<th>Joining Date</th>
+								<th>Qualification</th>
+								<th>Specialization</th>
+								<th>Registration No.</th>
+								<th>Registration Code</th>
+								<th>Registration Date</th>
+								<th>Medical Association</th>
+								<th>Hospital Affiliation</th>
+								
+							</tr>
+							<c:forEach items="${l}" var="c">
+								<tr>
+									<td><a href="RecordsCarEDIT.jsp?Caregiver_ID=${c.getCaregiver_ID()}">edit</a></td>
+									<td>${c.getLastName()}</td>
+									<td>${c.getLastName()}</td>
+									<td>${c.getFirstName()}</td>
+									<td>${c.getMiddleName()}</td>
+									<td>${c.getDateBirth()}</td>
+									<td>${c.getAge()}</td>
+									<td>${c.getAddress()}</td>
+									<td>${c.getCity()}</td>
+									<td>${c.getPinCode()}</td>
+									<td>${c.getState()}</td>
+									<td>${c.getCountry()}</td>
+									<td>${c.getPhone()}</td>
+									<td>${c.getMobile()}</td>
+									<td>${c.getEmail()}</td>
+									<td>${c.getDesignation()}</td>
+									<td>${c.getJoiningDate()}</td>
+									<td>${c.getQualification()}</td>
+									<td>${c.getSpecialization()}</td>
+									<td>${c.getRegistrationNo()}</td>
+									<td>${c.getRegistrationCode()}</td>
+									<td>${c.getRegistrationDate()}</td>
+									<td>${c.getHospitalAffiliation()}</td>
+								
+								</tr>
+							</c:forEach>
+						</table>
+					</div>	
+			</article>
+		</a>
+		<a href="#" title="Post 1">
+			<article>
+				<figure>
+					<img src="https://placehold.it/480x360" alt="image-1">
+				</figure>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate itaque consequatur illo quis, delectus, incidunt labore.</p>
+				
+			</article>
+		</a>
+		<a href="#" title="Post 1">
+			<article>
+				<figure>
+					<img src="https://placehold.it/480x360" alt="image-1">
+				</figure>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate itaque consequatur illo quis, delectus, incidunt labore.</p>
+				
+			</article>
+		</a>
+		<a href="#" title="Post 1">
+			<article>
+				<figure>
+					<img src="https://placehold.it/480x360" alt="image-1">
+				</figure>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate itaque consequatur illo quis, delectus, incidunt labore.</p>
+				
+			</article>
+		</a>
+		<a href="#" title="Post 1">
+			<article>
+				<figure>
+					<img src="https://placehold.it/480x360" alt="image-1">
+				</figure>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate itaque consequatur illo quis, delectus, incidunt labore.</p>
+				
+			</article>
+		</a>
+		<a href="#" title="Post 1">
+			<article>
+				<figure>
+					<img src="https://placehold.it/480x360" alt="image-1">
+				</figure>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate itaque consequatur illo quis, delectus, incidunt labore.</p>
+				
+			</article>
+		</a>
+	</main>
+	<div id="container2"></div>
+	
+	
+		</body> 
+</html>
