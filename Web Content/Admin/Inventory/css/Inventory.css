@@ -1,0 +1,296 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:100%;
+	font-family: "Lato", sans-serif;
+	line-height: 1.0em;
+	color: #fff;
+
+}
+.has-error input[type="text"], .has-error input[type="email"], .has-error select {
+    border: 1px solid #a94442;
+}
+
+#all{
+	position: relative;
+	left: 5%;
+	width: 95%;
+	height: 1030px;
+	overflow: auto;
+}
+	
+
+#resTable{
+	background:#C0C0C0;
+	width: 90%;
+	HEIGHT: 300px;
+	overflow: auto;
+}
+
+
+
+#Table{
+	background:#C0C0C0;
+	width: 70%;
+	HEIGHT: 700px;
+	overflow: auto;
+}
+
+#Search button{
+	position: relative;
+	font: Arial;
+	font-size: 14px;
+	margin: 5px;
+	padding:7px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 3px;
+	
+	}	
+#Search input[type="search"]{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+	
+}
+input[type="text"]{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+}
+input[type="email"]{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+}
+textarea{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+}
+input[type="number"]{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+}
+input[type="date"]{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;
+}
+input[type="tel"]{
+	margin: 3px;
+	border-radius:10px;
+	font-size: 12px;
+	padding: 7px;	
+}
+select{
+	margin: 3px;
+	font-size: 12px;
+	padding: 7px;	
+}
+tr{
+	
+    border-top: 1px solid #fff;
+}
+tr:hover {
+    background: #000;
+}
+th{
+	background:#686868;
+	text-align:center;
+	padding:5px;
+}
+td{
+	
+	text-align:center;
+	padding:5px;
+}
+td:hover {
+    cursor: pointer;
+}
+
+form [input type="text"]{
+	border-radius: 1px solid black;
+}
+
+#horizontalBar{
+	witdh: 800px;
+	height: 300px;
+}
+.logo{
+	line-height: 60px;
+	position: fixed;	
+	float: left;
+	margin: 16px 46px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 2px
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	line-height: 70px;
+}	
+
+
+nav ul{
+	line-height: 70px;
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	padding-right: 10px;
+	transition: 1s;
+}
+nav.black ul{
+	background: #ADD8E6;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+@media(max-width: 786px){
+	.logo{
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+	
+	nav ul{
+		max-height: 0px;
+		background:#ADD8E6;
+		
+	}
+	
+	nav.black ul{
+	background:#ADD8E6;
+	}
+	
+	.showing{
+		max-height: 34em;
+	}
+	
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px;
+		text-align: center;
+	}
+	
+	.menu-icon {
+            display: block;
+      }
+}
+
+#container{
+	height: 50vh;
+	width: 100%;
+	background-image: url("IMG/bgr.png");
+	display: table;
+	background-attachment: fixed;
+}
+
+
+label{
+	width: 150px;
+	display: inline-block;
+	font-size: 16px;
+}
+#butts{
+	position: relative;
+	width: 15%;
+	height: 400px;
+	top: -1000px;
+	
+}
+#butts button{
+	position: relative;
+	left:-185px;
+	color:white;
+	text-align:center;
+	width: 218px;
+	height: 70px;
+	margin:2px;
+	font-size: 16px;
+	font-family: Arial;
+	
+  	transition: 0.3s; /* Add transition on hover */
+  	padding: 15px; /* 15px padding */
+  	border-radius: 0 5px 5px 0;
+}
+
+#butts button:hover{
+	left: -25px;
+}
+#his{  
+	 background-color: #4CAF50;
+}
+#dis{
+	background-color: #FFD700; /* Blue */
+	
+}
+#com{
+	background-color: #2196F3; /* Blue */
+	
+}
+#alle{
+	background-color:#733D1A;
+}
+#gen{
+	background-color:#2196F3;
+	}
+#cli{
+	background-color:#66BBA5;
+	}
+#inv{
+	background-color:#F8171B;
+	}
+#pes{
+	background-color:#CDCD00;
+	}
+#fam{
+	background-color:#f44336;
+	}
+#opd{
+	background-color:#3AA18D;
+	}
+#ref{
+	background-color:#FF4F56;
+	}
+#pri{
+	background-color:#B1DD27;
+	}
+#doc{
+	background-color:#9B30FF;
+	}
+#pra{
+	background-color:#555;
+	}
+#biil{
+	background-color:#8C8ACF;
+}
+
+h2{
+	background-color:rgb(224,224,224);
+	margin:0;
+	padding:10px;
+}
+h4{
+	background:rgb(150,150,150);
+	padding: 5px;
+}
